@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/css-toggle-switch@latest/dist/toggle-switch.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Pricing Component</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Our Pricing</h1>
+      <div class="header__label">
+        <p class="header__annual">Annually</p>
+        <label class="switch-light switch-material">
+          <input id="js-toggle" type="checkbox" checked />
+          <span class="toggle__switch" aria-hidden="true">
+            <span>Off</span>
+            <span>On</span>
+            <a></a>
+          </span>
+        </label>
+        <p class="header__monthly">Monthly</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="grid-container wrap">
+        <div class="card card--radius-right">
+          <section>
+            <h2 class="card__title">Basic</h2>
+            <div class="card__content">
+              <span class="card__currency">$</span>
+              <span class="card__price" id="js-basic">19.99</span>
+            </div>
+            <p class="card__plan">500 GB Storage</p>
+            <p class="card__plan">2 Users Allowed</p>
+            <p class="card__plan">Send up to 3 GB</p>
+
+            <button class="card__btn">Learn More</button>
+          </section>
+        </div>
+
+        <div class="card card--mod">
+          <section>
+            <h2 class="card__title card__title--col-white">Professional</h2>
+            <div class="card__content">
+              <span class="card__currency">$</span>
+              <span class="card__price" id="js-prof">24.99</span>
+            </div>
+            <p class="card__plan card__plan--col-white">1 TB Storage</p>
+            <p class="card__plan card__plan--col-white">5 Users Allowed</p>
+            <p class="card__plan card__plan--col-white">Send up to 10 GB</p>
+
+            <button class="card__btn card__btn--mod">Learn More</button>
+          </section>
+        </div>
+
+        <div class="card card--radius-left">
+          <section>
+            <h2 class="card__title">Master</h2>
+            <div class="card__content">
+              <span class="card__currency">$</span>
+              <span class="card__price" id="js-master">39.99</span>
+            </div>
+            <p class="card__plan">2 TB Storage</p>
+            <p class="card__plan">10 Users Allowed</p>
+            <p class="card__plan">Send up to 20 GB</p>
+
+            <button class="card__btn">Learn More</button>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <small>
+        Challenge by
+        <a
+          class="footer__link"
+          href="https://www.frontendmentor.io/profile/Rabin92"
+          target="_blank"
+          rel="noopener"
+          >Frontend Mentor</a
+        >. Coded by
+
+        <a
+          class="footer__link"
+          href="https://www.rabingm.dev"
+          target="_blank"
+          rel="noopener"
+          >Rabin Gharti Magar</a
+        >.
+      </small>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

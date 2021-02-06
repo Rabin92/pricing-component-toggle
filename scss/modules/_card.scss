@@ -1,0 +1,138 @@
+// ==========================================================================
+// Card
+// ==========================================================================
+
+.grid-container {
+  padding: $gutters;
+  margin-top: em(60px);
+
+  @media #{$break--s} {
+    @include flexy($f-dir: column);
+  }
+
+  @media #{$break--m} {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  @media #{$break--l} {
+    animation: fadeIn 1s cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
+  }
+}
+
+.card {
+  padding: $gutters;
+  text-align: $text--center;
+  background-color: $white;
+  color: $priceCol;
+  margin-bottom: em(20px);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+
+  @media #{$break--m} {
+    @include m(radius-right) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    @include m(radius-left) {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+
+  @media #{$break--s} {
+    width: 500px;
+  }
+
+  @media #{$break--m} {
+    width: initial;
+  }
+
+  @include m(mod) {
+    background-image: linear-gradient(to bottom, $gradientOne, $gradientTwo);
+    color: $white;
+
+    @media #{$break--m} {
+      padding: em(35px);
+    }
+  }
+
+  @include e(title) {
+    color: $textCol;
+    margin-bottom: 0;
+    font-size: em(16px);
+
+    @include m(col-white) {
+      color: $white;
+    }
+  }
+
+  @include e(content) {
+    @include flexy($j-content: center);
+    border-bottom: 1px solid $cadetBlue;
+    padding-bottom: em(15px);
+  }
+
+  @include e(currency) {
+    font-size: em(35px);
+    margin-right: em(2px);
+  }
+
+  @include e(price) {
+    font-size: em(55px);
+  }
+
+  @include e(plan) {
+    border-bottom: 1px solid $cadetBlue;
+    padding-bottom: 0.85em;
+    color: $textCol;
+
+    @include m(col-white) {
+      color: $white;
+    }
+  }
+
+  @include e(btn) {
+    border-radius: 5px;
+    width: 100%;
+    padding: 0.65em;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, $gradientOne, $gradientTwo);
+    color: $white;
+    margin: em(15px) em(0px);
+
+    &:hover {
+      background: transparent;
+      border: 1px solid $havelockBlue;
+      color: $havelockBlue;
+      transition: all 0.55ms ease-in-out;
+    }
+
+    @include m(mod) {
+      background: $white;
+      color: $gradientTwo;
+
+      &:hover {
+        background: transparent;
+        border: 1px solid $white;
+        color: $white;
+        transition: all 0.55ms ease-in-out;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  50% {
+    opacity: 0.55;
+    transform: rotate(-5deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,27 @@
+// ==========================================================================
+// Toggle Switch
+// ==========================================================================
+
+.switch-material.switch-light > span {
+  background-image: linear-gradient(to right, $gradientTwo, $gradientOne);
+}
+
+.switch-material.switch-light input:checked ~ span {
+  background-image: linear-gradient(to left, $gradientTwo, $gradientOne);
+
+  &:hover {
+    background: $gradientOne;
+  }
+}
+
+.switch-material.switch-light input:checked ~ span a {
+  background: $white;
+}
+
+.toggle__switch {
+  cursor: pointer;
+
+  &:hover {
+    background: red;
+  }
+}

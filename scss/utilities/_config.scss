@@ -1,0 +1,46 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+// Font Stacks
+$font-url--primary: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap';
+$font-family--primary: 'Montserrat', sans-serif;
+
+// Font Weights
+$font-weight--bold: 700;
+
+// Descriptive Base Colors
+$white: #fff;
+$black: #000;
+$perano: #a3a8f0;
+$havelockBlue: #696fdd;
+$selago: #f6f6fe;
+$cadetBlue: #b3b5c6;
+$stormGray: #6d708d;
+$trout: #494c5f;
+
+// Color Usage
+$gradientOne: $perano;
+$gradientTwo: $havelockBlue;
+$bckCol: $selago;
+$toggleTextCol: $cadetBlue;
+$textCol: $stormGray;
+$priceCol: $trout;
+
+// Text
+$base__font-size: 15px;
+$base__line: 24px;
+$text--center: center;
+
+// Path to Assets
+
+$path--rel: '../images';
+
+// Gutters
+$gutters: 1em;
+
+// Media queries
+
+$break--s: '(min-width: 600px)';
+$break--m: '(min-width: 768px)';
+$break--l: '(min-width: 1024px)';

@@ -1,0 +1,27 @@
+// ==========================================================================
+// Header
+// ==========================================================================
+
+.header {
+  text-align: $text--center;
+  padding-top: em(45px);
+  color: $toggleTextCol;
+
+  @include e(title) {
+    color: $textCol;
+    font-size: em(25px);
+  }
+
+  @include e(label) {
+    @include flexy($j-content: center);
+    font-size: em(12px);
+  }
+
+  @include e(annual) {
+    margin-right: 15px;
+  }
+
+  @include e(monthly) {
+    margin-left: 15px;
+  }
+}
