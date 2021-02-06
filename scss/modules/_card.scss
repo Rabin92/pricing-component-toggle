@@ -101,6 +101,7 @@
     background-image: linear-gradient(to right, $gradientOne, $gradientTwo);
     color: $white;
     margin: em(15px) em(0px);
+    border: 1px solid transparent;
 
     &:hover {
       background: transparent;
