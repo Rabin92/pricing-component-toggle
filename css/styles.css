@@ -411,6 +411,7 @@ button {
   background-image: linear-gradient(to right, #a3a8f0, #696fdd);
   color: #fff;
   margin: 1em 0em;
+  border: 1px solid transparent;
 }
 .card__btn:hover {
   background: transparent;
